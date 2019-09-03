@@ -1,0 +1,16 @@
+<fieldset>
+  <legend>{{@title}}</legend>
+  {{#each this.cityNames as |cityName| }}
+    <div class="radio-button">
+      <input
+        type="radio"
+        id="city-{{cityName.city}}"
+        name={{@name}}
+        value={{cityName.city}}
+        >
+      <label for="city-{{cityName.city}}">
+        {{cityName.city}}
+      </label>
+    </div>
+  {{/each}}
+</fieldset>

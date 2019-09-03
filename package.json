@@ -2,10 +2,10 @@
   "name": "three-eleven-zero-octane",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for three-eleven-zero-octane goes here",
+  "description": "testing out octane features in an Ember app using v.3.11.0",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Melanie Sumner<melaniersumner@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
