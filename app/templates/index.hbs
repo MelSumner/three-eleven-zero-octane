@@ -1,13 +1,41 @@
-<form action="">
+<form action="self">
   <RadioButtons 
     @title="City Preference"
     @cityNames={{this.cityNames}}
     @name="city-preference"
   />
   
-</form>
+  <div class="form-group">
+    <label for="input_firstName">First Name:</label>
+    <input id="input_firstName" type="text" name="firstName" required autocomplete="off" />
+  </div>
 
-<ButtonGeneric 
+  <div class="input-wrapper">
+    <label for="activity">What is your favorite activity?</label>
+    <select id="activity" name="activity">
+      <option />
+      <optgroup label="Outdoors Things">
+        <option>Rock Climbing</option>
+        <option>Cycling</option>
+      </optgroup>
+
+      <optgroup label="Indoors Things">
+        <option>Painting</option>
+        <option>Playing Video Games</option>
+      </optgroup>
+    </select>
+  </div>
+  <InputSelect @selectLabelText="Option Preference" @selectName="optionPrefs" />
+
+  <ButtonGeneric 
     @type="submit"
     @accessibleName="Click Me"
-    />
+  />
+  <ButtonGeneric
+    @type="reset"
+    @accessibleName="Clear Form"
+  />
+</form>
+
+
+
