@@ -2,8 +2,8 @@
   <label for={{this.selectId}}>{{@selectLabelText}}</label>
   <select id={{this.selectId}} name={{@selectName}}>
     <option disabled selected value="">Choose one</option>
-    {{#each this.selectOptions as |selectOption|}}
-      <option value={{selectOption}}>{{selectOption}}</option>
+    {{#each @selectOptions as |selectOption|}}
+      <option value={{selectOption.id}}>{{selectOption.name}}</option>
     {{/each}}
   </select>
 </div>

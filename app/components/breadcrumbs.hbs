@@ -1,0 +1,11 @@
+<nav class="breadcrumb-nav" aria-label={{@ariaLabelText}}>
+  <ol>
+    {{#each this.breadcrumbs as |breadcrumb|}}
+      <li>
+        <a href={{breadcrumb.route}}>
+          {{breadcrumb.name}}
+        </a>
+      </li>
+    {{/each}}
+  </ol>
+</nav>

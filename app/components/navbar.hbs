@@ -1,0 +1,12 @@
+<nav class="navbar-primary">
+  {{!-- <button class="navbar-toggler ember-view" aria-label="Site Navigation" aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button> --}}
+
+  <ul class="navbar-list">
+    {{#each this.navLinks as |link| }}
+      <li><a href={{link.href}}>{{link.name}}</a></li>
+    {{/each}}
+  </ul>
+
+</nav>

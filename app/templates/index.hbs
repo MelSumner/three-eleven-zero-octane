@@ -1,3 +1,5 @@
+<Breadcrumbs @ariaLabelText="text" />
+
 <form action="self">
   <RadioButtons 
     @title="City Preference"
@@ -25,17 +27,17 @@
       </optgroup>
     </select>
   </div>
-  <InputSelect @selectLabelText="Option Preference" @selectName="optionPrefs" />
 
-  <ButtonGeneric 
-    @type="submit"
-    @accessibleName="Click Me"
+  <InputSelect 
+    @selectLabelText="Option Preference" 
+    @selectName="optionPrefs" 
+    @selectedOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
   />
-  <ButtonGeneric
-    @type="reset"
-    @accessibleName="Clear Form"
-  />
+
+  <Typeahead @typeaheadLabelText="Choice or Search Label Text" />
+
+  <ButtonGeneric @type="submit" @accessibleName="Click Me" />
+  <ButtonGeneric @type="reset"  @accessibleName="Clear Form" />
+
 </form>
-
-
 

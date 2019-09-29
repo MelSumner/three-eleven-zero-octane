@@ -1,0 +1,27 @@
+<div class="form-group">
+  <label for={{this.inputId}}
+       id={{this.labelId}}
+       class="combobox-label">
+    {{@typeaheadLabelText}}
+  </label>
+  <div class="combobox-wrapper">
+    <div role="combobox"
+        aria-expanded="false"
+        aria-owns={{this.listboxId}}
+        aria-haspopup="listbox"
+        id={{this.comboboxId}}>
+      <input type="text"
+            aria-autocomplete="list"
+            aria-controls={{this.listboxId}}
+            id={{this.inputId}}>
+    </div>
+    <ul aria-labelledby={{this.labelId}}
+        role="listbox"
+        id={{this.listboxId}}
+        class="listbox hidden">
+      {{#each this.listboxOptions as |option index| }}
+        <li class="listbox-result" role="option" id="{{this.listboxId}}-{{index}}">{{option}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

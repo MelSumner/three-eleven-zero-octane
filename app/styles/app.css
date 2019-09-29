@@ -6,3 +6,17 @@ body {
   font-size: 16px;
   line-height: 1.2;
 }
+.hidden {
+  display: none;
+}
+
+.listbox {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.listbox-result {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
